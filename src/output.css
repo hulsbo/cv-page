@@ -684,12 +684,20 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .justify-items-center {
@@ -1097,6 +1105,10 @@ video {
 
   .lg\:w-6\/12 {
     width: 50%;
+  }
+
+  .lg\:min-w-60 {
+    min-width: 15rem;
   }
 
   .lg\:flex-row {
