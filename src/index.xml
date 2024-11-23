@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="index.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<curriculumVitae>
+    <personalInfo>
+        <role>Web/XML Software Developer</role>
+        <location>Göteborg, Sweden</location>
+    </personalInfo>
+
+    <competences>
+        <competenceGroup name="frontend">
+            <competence>Typescript</competence>
+            <competence>React</competence>
+            <competence>HTML5/CSS3/JavaScript</competence>
+            <competence>HTMX</competence>
+            <competence>Tailwindcss</competence>
+        </competenceGroup>
+        <competenceGroup name="backend">
+            <competence>Java</competence>
+            <competence>Quarkus</competence>
+        </competenceGroup>
+        <competenceGroup name="xml">
+            <competence>XSLT</competence>
+            <competence>XSpec</competence>
+            <competence>XPath / XQuery</competence>
+            <competence>DITA</competence>
+            <competence>RNG</competence>
+        </competenceGroup>
+    </competences>
+
+    <languages>
+        <language level="Native">Swedish</language>
+        <language level="Professional">English</language>
+        <language level="Conversational">French</language>
+    </languages>
+
+    <profile>
+        <highlight>Soon 2 years of experience in modern web technologies.</highlight>
+        <highlight>Specialized in XML Technologies.</highlight>
+        <highlight>Former experience as a technical writer.</highlight>
+        <highlight>3+ years of experience in the technical documentation domain.</highlight>
+    </profile>
+
+    <professionalExperience>
+        <position role="Software developer @ Simonsoft">
+            <location><name>Göteborg</name></location>
+            <period start="2024-03"/>
+            <desc>
+                <p>Lead role in frontend development project for Simonsoft CMS, a CMS adapted for small to medium technical writer teams producing technical documentation such as user manuals, service manuals and spare parts documentation. The project was about implementing and reconfiguring a web-based XML editor into the CMS.</p>
+                <p>In addition to this responsibility, I have been maintaining the RNG DITA schemas and developing XSL transforms for the CMS's different XML pipelines. I also implemented a strict "TDD" process for XSLT development using the XSpec testing framework.</p>
+            </desc>
+        </position>
+        <position role="Technical communicator @ SEMCON">
+            <location><name>Göteborg</name></location>
+            <period start="2021-10" end="2024-03"/>
+            <desc>
+                <p>Responsible for the authoring of the service manuals associated with the customer's product portfolio of different warehouse trucks.</p>
+            </desc>
+        </position>
+    </professionalExperience>
+
+    <education>
+        <degree name="BSc: Product development and Innovation management">
+            <issuer>Halmstad University</issuer>
+            <location>
+                <name>Halmstad</name>
+                <long>41</long>
+                <lat>151</lat>
+            </location>
+            <period start="2016-09" end="2019-06"/>
+            <desc>
+                <p>An innovation engineer learns the fundamentals of engineering in every engineering discipline. The program is intended to equip its students well for the role as an effective project leader for innovative product development projects.</p>
+                <p>Highest award in product renewal project. Contact me for grades.</p>
+                <p>As a side activity I worked as supplementary instruction leader in engineering mathematics.</p>
+            </desc>
+        </degree>
+    </education>
+
+    <projects>
+        <project name="Provisioner - a diet management system for adventures" href="https://github.com/hulsbo/provisioner-quarkus">
+            <technology languages="Java Javascript" frameworks="Quarkus HTMX"/>
+            <period start="2024-04"/>
+            <desc>
+                <p>Provisioner was my first big project in Java EE. It's an application which calculates the provisions needed for any group of people planning an adventure together. The calculation respects many things, for example the physiology of each crew member, energy density of nutritions and the proportions between the nutritions, ingredients and meals planned to be eaten during the adventure.</p>
+                <p>When I finished the backend part at a foundational level, I decided to try to add a frontend using the Quarkus framework and HTMX. That part of the project is yet to be completed. The backend also needs to be tested through and through with a test framework.</p>
+                <p>The project has been a great way to practice recent learnings in object oriented programming (self-studying Java: How To Program by P. and D. Deitel), including implementation of design patterns and backend API endpoints.</p>
+            </desc>
+        </project>
+        <project name="Personal running blog" href="https://redshoesrunning.com">
+            <technology languages="JavaScript VisualBasic HTML5 CSS3 YML MD" frameworks="Jekyll"/>
+            <period start="2023-06"/>
+            <desc>
+                <p>The blog was built with static site generator Jekyll and deployed via GitHub Pages. A macro-enabled excel-sheet using Visual Basic scripts was also created to quickly edit and regenerate the html file for the "plan" page. The blog uses JavaScript to make it easier for visitors to follow the progress of the running plan.</p>
+                <q>Some quote about the project.</q>
+            </desc>
+        </project>
+    </projects>
+
+</curriculumVitae>

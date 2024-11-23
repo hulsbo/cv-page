@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="curriculumVitae">
+            
+            <ref name="element.personalInfo"/>
+            <optional>
+                <ref name="element.competences"/>
+            </optional>
+            <optional>
+                <ref name="element.languages"/>
+            </optional>
+            <optional>
+                <ref name="element.profile"/>
+            </optional>
+            <optional>
+                <ref name="element.professionalExperience"/>
+            </optional>
+            <optional>
+                <ref name="element.education"/>
+            </optional>
+            <optional>
+                <ref name="element.projects"/>
+            </optional>
+            <optional>
+                <ref name="element.endorsements"/>
+            </optional>
+            
+        </element>
+    </start>
+
+    <define name="element.personalInfo">
+        <element name="personalInfo">
+            <element name="role">
+                <text/>
+            </element>
+            <element name="location">
+                <text/>
+            </element>
+        </element>
+    </define>
+
+    <define name="element.languages">
+        <element name="languages">
+            <oneOrMore>
+                <element name="language">
+                    <attribute name="level">
+                        <choice>
+                            <value>Learning</value>
+                            <value>Conversational</value>
+                            <value>Professional</value>
+                            <value>Native</value>
+                        </choice>
+                    </attribute>
+                    <text/>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+
+    <define name="element.profile">
+        <element name="profile">
+            <oneOrMore>
+                <element name="highlight">
+                    <text/>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+
+    <define name="element.professionalExperience">
+        <element name="professionalExperience">
+            <oneOrMore>
+                <element name="position">
+                    <ref name="element.location"/>
+                    <ref name="element.period"/>
+                    <ref name="element.desc"/>
+                    <attribute name="role"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+
+    <define name="element.education">
+        <element name="education">
+            <element name="degree">
+                <attribute name="name"/>
+                <element name="issuer">
+                    <text/>
+                </element>
+                <ref name="element.location"/>
+                <ref name="element.period"/>
+                <ref name="element.desc"/>
+            </element>
+        </element>
+    </define>
+
+    <define name="element.projects">
+        <element name="projects">
+            <zeroOrMore>
+                <element name="project">
+                    <attribute name="name">
+                        <a:documentation>Specifies the name of the project.</a:documentation>
+                    </attribute>
+                    <attribute name="href">
+                        <a:documentation>Specifies the URL to the project (e.g. GitHub repository).</a:documentation>
+                        <data type="anyURI"/>
+                    </attribute>
+                    <element name="technology">
+                        <attribute name="languages">
+                            <a:documentation>Specifies the coding languages used for this project.</a:documentation>
+                        </attribute>
+                        <attribute name="frameworks">
+                            <a:documentation>Specifies the frameworks used for this project.</a:documentation>
+                        </attribute>
+                    </element>
+                    <ref name="element.period"/>
+                    <ref name="element.desc"/>
+
+                </element>
+            </zeroOrMore>
+        </element>
+    </define>
+
+    <define name="element.period">
+        <element name="period">
+            <attribute name="start">
+                <data type="gYearMonth"/>
+            </attribute>
+            <optional>
+                <attribute name="end">
+                    <data type="gYearMonth"/>
+                </attribute>
+            </optional>
+        </element>
+    </define>
+
+    <define name="element.desc">
+        <element name="desc">
+            <oneOrMore>
+                <interleave>
+                    <element name="p">
+                        <text/>
+                    </element>
+                    <optional>
+                        <element name="q">
+                            <text/>
+                        </element>
+                    </optional>
+                </interleave>
+            </oneOrMore>
+        </element>
+    </define>
+
+    <define name="element.location">
+        <element name="location">
+            <element name="name">
+                <a:documentation>Specifies the name of the location.</a:documentation>
+                <text/>
+            </element>
+            <optional>
+                <element name="long">
+                    <a:documentation>Specifies the longitud of the location.</a:documentation>
+                    <data type="decimal"/>
+                </element>
+                <element name="lat">
+                    <a:documentation>Specifies the latitud of the location.</a:documentation>
+                    <data type="decimal"/>
+                </element>
+            </optional>
+        </element>
+    </define>
+
+    <define name="element.competences">
+        <element name="competences">
+            <oneOrMore>
+                <element name="competenceGroup">
+                    <oneOrMore>
+                        <element name="competence">
+                            <optional>
+                                <attribute name="level">
+                                    <choice>
+                                        <value>1</value>
+                                        <value>2</value>
+                                        <value>3</value>
+                                        <value>4</value>
+                                        <value>5</value>
+                                    </choice>
+                                </attribute>
+                            </optional>
+                            <text/>
+                        </element>
+                    </oneOrMore>
+                    <attribute name="name"/>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+
+    <define name="element.endorsements">
+        <element name="endorsements">
+            <oneOrMore>
+                <element name="endorsement">
+                    <attribute name="name"/>
+                    <optional>
+                        <element name="context">
+                            <a:documentation>Describes the context where the endorsement was made (project, role).</a:documentation>
+                            <text/>
+                        </element>
+                    </optional>
+                    <element name="q">
+                        <text/>
+                    </element>
+                    <element name="sign">
+                        <text/>
+                    </element>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+
+</grammar>
