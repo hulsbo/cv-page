@@ -72,10 +72,10 @@
         <element name="professionalExperience">
             <oneOrMore>
                 <element name="position">
+                    <attribute name="role"/>
                     <ref name="element.location"/>
                     <ref name="element.period"/>
                     <ref name="element.desc"/>
-                    <attribute name="role"/>
                 </element>
             </oneOrMore>
         </element>
@@ -83,15 +83,17 @@
 
     <define name="element.education">
         <element name="education">
-            <element name="degree">
-                <attribute name="name"/>
-                <element name="issuer">
-                    <text/>
+            <oneOrMore>
+                <element name="degree">
+                    <attribute name="name"/>
+                    <element name="issuer">
+                        <text/>
+                    </element>
+                    <ref name="element.location"/>
+                    <ref name="element.period"/>
+                    <ref name="element.desc"/>
                 </element>
-                <ref name="element.location"/>
-                <ref name="element.period"/>
-                <ref name="element.desc"/>
-            </element>
+            </oneOrMore>
         </element>
     </define>
 
@@ -139,14 +141,16 @@
         <element name="desc">
             <oneOrMore>
                 <interleave>
-                    <element name="p">
-                        <text/>
-                    </element>
-                    <optional>
+                    <zeroOrMore>
+                        <element name="p">
+                            <text/>
+                        </element>
+                    </zeroOrMore>
+                    <zeroOrMore>
                         <element name="q">
                             <text/>
                         </element>
-                    </optional>
+                    </zeroOrMore>
                 </interleave>
             </oneOrMore>
         </element>
@@ -155,16 +159,13 @@
     <define name="element.location">
         <element name="location">
             <element name="name">
-                <a:documentation>Specifies the name of the location.</a:documentation>
                 <text/>
             </element>
             <optional>
                 <element name="long">
-                    <a:documentation>Specifies the longitud of the location.</a:documentation>
                     <data type="decimal"/>
                 </element>
                 <element name="lat">
-                    <a:documentation>Specifies the latitud of the location.</a:documentation>
                     <data type="decimal"/>
                 </element>
             </optional>
