@@ -69,7 +69,7 @@
     </define>
 
     <define name="element.professionalExperience">
-        <element name="professionalExperience">
+        <element name="professional-experience">
             <oneOrMore>
                 <element name="position">
                     <attribute name="role"/>

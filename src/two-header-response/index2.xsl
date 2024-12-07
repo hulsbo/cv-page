@@ -19,7 +19,6 @@
                 <title>Curriculum Vitae - Oskar Huledal</title>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <!-- Let's avoid touching the "Confusing Selector Soup". -->
                 <link href="../output.css" rel="stylesheet"/>
             </head>
 
@@ -27,7 +26,7 @@
 
                 <div data-elt="page">
 
-                    <div >
+                    <div data-elt="general-info">
                         <!-- image and title -->
                         <div data-elt="image-title">
                             <div data-elt="image">
@@ -38,45 +37,45 @@
                                 <!-- name -->
                                 <p data-elt="name">Oskar Huledal</p>
                                 <!-- role -->
-                                <p data-elt="role">Web/XML Software Developer</p>
+                                <p data-elt="role"><xsl:value-of select=".//personalInfo/role"/></p>
                             </div>
                         </div>
                         <!-- contacts -->
                         <div data-elt="contacts">
                             <!-- Location -->
-                            <div data-elt="image-title">
+                            <div data-elt="location">
                                 <!-- Icon -->
-                                <img alt="location logo"/>
+                                <img src="graphics/location.svg" alt="location logo"/>
                                 <!-- Text -->
                                 <p>
-                                    <a href="https://maps.google.com/?q=57.70887,11.97&amp;ll=51,1.8&amp;z=5" target="_blank">Göteborg, Sweden</a>
+                                    <a href="https://maps.google.com/?q=57.70887,11.97&amp;ll=51,1.8&amp;z=5" target="_blank"><xsl:value-of select=".//personalInfo/location"/></a>
                                 </p>
                             </div>
                             <!-- Mail -->
-                            <div>
+                            <div data-elt="mail">
                                 <!-- Icon -->
-                                <img alt="mail logo"/>
+                                <img src="graphics/mailto.svg" alt="mail logo"/>
                                 <!-- Text -->
                                 <p>
                                     <a href="mailto:oskar.huledal@gmail.com">oskar.huledal@gmail.com</a>
                                 </p>
                             </div>
                             <!-- GitHub -->
-                            <div >
+                            <div data-elt="github">
                                 <!-- Icon -->
-                                <img alt="github logo"/>
+                                <img src="graphics/github.svg" alt="github logo"/>
                                 <!-- Text -->
                                 <p>
-                                    <a target="_blank">hulsbo</a>
+                                    <a href="https://github.com/hulsbo" target="_blank">hulsbo</a>
                                 </p>
                             </div>
                             <!-- LinkedIn -->
-                            <div >
+                            <div data-elt="linkedin">
                                 <!-- Icon -->
-                                <img alt="linkedIn logo"/>
+                                <img src="graphics/linkedin.svg" alt="linkedin logo"/>
                                 <!-- Text -->
                                 <p>
-                                    <a target="_blank">LinkedIn</a>
+                                    <a href="https://www.linkedin.com/in/oskar-huledal/" target="_blank">LinkedIn</a>
                                 </p>
                             </div>
                         </div>
@@ -96,7 +95,7 @@
 
                             <xsl:apply-templates select=".//profile" mode="div"/>
 
-                            <xsl:apply-templates select=".//professionalExperience" mode="div"/>
+                            <xsl:apply-templates select=".//professional-experience" mode="div"/>
 
                             <xsl:apply-templates select=".//education" mode="div"/>
 
@@ -128,8 +127,6 @@
                 <xsl:value-of select="./name/text()"/>
             </div>
 
-
-
         </div>
 
     </xsl:template>
@@ -139,10 +136,15 @@
     <xsl:template match="desc"> </xsl:template>
 
     <xsl:template match="*" mode="div">
-        <div data-elt="{local-name()}">
-            <xsl:apply-templates select="@*"/>
+        <xsl:param name="hasTitle" as="xs:boolean" select="true()"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" data-elt="{local-name()}">
+            <xsl:if test="$hasTitle">
+                <h2><xsl:value-of select="upper-case(string-join(tokenize(local-name(), '-'), ' '))"/></h2>   
+            </xsl:if>
             <xsl:value-of select="./text()"/>
-            <xsl:apply-templates select="*" mode="div"/>
+            <xsl:apply-templates select="*" mode="div">
+                <xsl:with-param name="hasTitle" select="false()"/>
+            </xsl:apply-templates>
         </div>
     </xsl:template>
 
