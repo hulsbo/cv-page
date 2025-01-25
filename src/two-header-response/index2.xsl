@@ -51,15 +51,6 @@
                                     <a href="https://maps.google.com/?q=57.70887,11.97&amp;ll=51,1.8&amp;z=5" target="_blank"><xsl:value-of select=".//personalInfo/location"/></a>
                                 </p>
                             </div>
-                            <!-- Mail -->
-                            <div data-elt="mail">
-                                <!-- Icon -->
-                                <img src="graphics/mailto.svg" alt="mail logo"/>
-                                <!-- Text -->
-                                <p>
-                                    <a href="mailto:oskar.huledal@gmail.com">oskar.huledal@gmail.com</a>
-                                </p>
-                            </div>
                             <!-- GitHub -->
                             <div data-elt="github">
                                 <!-- Icon -->
