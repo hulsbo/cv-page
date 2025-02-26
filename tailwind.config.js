@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./src/**/*.{html,js}"],
+	content: ["./**/*.{html,js}"],
 	theme: {
 		listStyleType: {
 			square: 'square'
 		},
-        listStyleImage: {
+		listStyleImage: {
 			checkmark: "url('./graphics/check-mark.png')",
 			markInCircle: "url('./graphics/check-mark-in-circle.svg')"
 		},
-    extend: {},
-  },
-  plugins: [],
+		extend: {},
+	},
+	plugins: [],
 }
 

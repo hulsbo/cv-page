@@ -1,16 +1,237 @@
 <!DOCTYPE html>
+<html class="bg-blue-100">
+
 <head>
-	<title>CV - redirect</title>
-	<style>
+	<title>Curriculum Vitae - Oskar Huledal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Let's avoid touching the "Confusing Selector Soup". -->
+	<link href="./src/output.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Press+Start+2P&display=swap"
+		rel="stylesheet">
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  40% {  opacity: 0.25; }
-}
-	</style>
 </head>
-<body style="display: flex; height: 100vh; width: 100vw; justify-content: center; align-items: center; animation: pulse 2s infinite; background-color: whitesmoke;">
 
-		<a href="https://hulsbo.github.io/cv-page/src/index.html" style="font-size:xx-large; color:black; font-weight: 600; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Link to Oskar Huledal's CV</a>
+<body class="flex-col justify-items-center m-10">
+	<!-- page -->
+	<div class=" bg-blue-50 p-5 pt-10 shadow-lg rounded-md max-w-screen-lg">
+
+		<!-- header -->
+		<div class="header flex flex-wrap items-center px-12 pb-10 lg:justify-between justify-evenly gap-10 lg:gap-20">
+			<!-- image and title -->
+			<div class="flex items-center gap-10 lg:gap-12">
+				<div class="image rounded-lg border-8 border-double border-emerald-700 w-36 overflow-hidden">
+					<img src="./src/graphics/meinpolo_softend.png" />
+				</div>
+				<!-- title -->
+				<div class="">
+					<!-- name -->
+					<p class="font-extralight text-lg">Oskar Huledal</p>
+					<!-- role -->
+					<p class="capitalize">front-end software developer</p>
+				</div>
+			</div>
+			<!-- contacts -->
+			<div class="flex flex-col flex-nowrap gap-1">
+				<!-- Location -->
+				<div class="flex mb-1">
+					<!-- Icon -->
+					<img class="mr-2 w-[18px]" src="./src/graphics/location.svg" />
+					<!-- Text -->
+					<p class="hover:underline"><a href="https://maps.google.com/?q=57.70887,11.97&ll=51,1.8&z=5"
+							target="_blank">Göteborg, Sweden</a></p>
+				</div>
+				<!-- GitHub -->
+				<div class="flex mb-1">
+					<!-- Icon -->
+					<img class="mr-2 w-[18px]" src="./src/graphics/github.svg" />
+					<!-- Text -->
+					<p><a class="hover:underline" href="https://github.com/hulsbo" target="_blank">hulsbo</a></p>
+				</div>
+				<!-- LinkedIn -->
+				<div class="flex mb-1">
+					<!-- Icon -->
+					<img class="mr-2 w-[18px]" src="./src/graphics/linkedin.svg" />
+					<!-- Text -->
+					<p><a class="hover:underline" href="https://www.linkedin.com/in/oskar-huledal/"
+							target="_blank">LinkedIn</a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Content Columns -->
+		<div class="flex flex-col-reverse gap-3 lg:flex-row lg:gap-0">
+			<!-- First Column -->
+			<div class="bg-emerald-950 rounded-md lg:rounded-r-none px-8 pt-2 pb-8 text-white lg:w-60">
+				<!-- Skills -->
+				<h2 class="text-lg tracking-widest uppercase my-5">COMPETENCES</h2>
+				<div class="flex flex-wrap gap-8">
+					<div class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
+						<h2 class="mb-3 font-bold text-center lg:text-start">FRONTEND</h2>
+						<ul class="*:mb-1">
+							<li>Typescript</li>
+							<li>React</li>
+							<li>HTML5/CSS3/JavaScript</li>
+							<li>HTMX</li>
+							<li>Tailwindcss</li>
+						</ul>
+					</div>
+					<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
+						<h2 class="mb-3 font-bold text-center lg:text-start">BACKEND</h2>
+						<ul class="*:mb-1">
+							<li>Java</li>
+							<li>Quarkus</li>
+						</ul>
+					</div>
+					<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
+						<h2 class="mb-3 font-bold text-center lg:text-start">XML</h2>
+						<ul class="*:mb-1">
+							<li>XSLT</li>
+							<li>XSpec</li>
+							<li>XPath / XQuery</li>
+							<li>DITA</li>
+							<li>RNG</li>
+						</ul>
+					</div>
+					<div class="flex flex-wrap gap-8">
+						<div
+							class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
+							<h2 class="mb-3 font-bold text-center lg:text-start">LANGUAGES</h2>
+							<ul class="*:mb-1">
+								<li>Swedish - Native</li>
+								<li>English - Professional</li>
+								<li>French - Moderate fluency</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Second Column -->
+			<div class="bg-slate-200 flex-1 rounded-md lg:rounded-r-md px-8 py-2">
+				<h2 class="text-lg tracking-widest uppercase my-5">PROFILE</h2>
+				<ul class="mb-5 list-inside flex flex-col gap-1">
+					<li class="flex gap-3"><img src="./src/graphics/check-mark-in-circle.svg"
+							class="self-start mt-1">Front-end developer with professional experience ( 2 years )</li>
+					<li class="flex gap-3"><img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1">
+						Dabbles with backend frameworks, API development and AWS</li>
+					<li class="flex gap-3"><img src="./src/graphics/check-mark-in-circle.svg"
+							class="self-start mt-1">Proficient in XML Technologies ( 3+ years )</li>
+				</ul>
+
+				<!-- EXPERIENCE -->
+				<div class="my-5">
+					<h2 class="text-lg tracking-widest uppercase my-5">PROFESSIONAL EXPERIENCE</h2>
+					<div class="flex justify-between mb-1 mt-5">
+						<h2 class="capitalize font-extralight italic">
+							Software developer @ Simonsoft</h2>
+						<h2 class="font-extralight">
+							Mar 2024 - Ongoing</h2>
+					</div>
+					<p class="text-justify">Developed a SaaS XML editor for technical writers. The browser is node.js
+						driven and utilises many different packages, such as react.js, express.js and TypeScript.
+					</p>
+					<p class="text-justify my-2">In addition to this responsibility, I have been maintaining the RNG
+						DITA schemas and developing XSL transforms for the CMS's different XML pipelines. I also
+						implemented a strict "TDD" process for XSLT development using the XSpec testing framework.</p>
+					<div class="flex justify-between mb-1 mt-5">
+						<h2 class="capitalize font-extralight italic">Technical communicator @ SEMCON
+						</h2>
+						<h2 class="font-extralight">Oct 2021 - Mar 2024</h2>
+					</div>
+					<p class="text-justify">Responsible for the authoring of the service manuals associated with the
+						customer's
+						product portfolio of different warehouse trucks. </p>
+				</div>
+				<!-- EDUCATION -->
+				<div class="my-5">
+					<h2 class="text-lg tracking-widest uppercase my-5">EDUCATION</h2>
+					<div class="flex justify-between mb-1 mt-5">
+						<h2 class="capitalize font-extralight italic">
+							BSc: Product development and Innovation management</h2>
+						<h2 class="font-extralight">
+							Aug 2016 - June 2019</h2>
+					</div>
+					<p class="text-justify my-2">An innovation engineer learns the fundamentals of engineering in every
+						engineering discipline. The program is intended to equip its students well for the role as a
+						project leader in innovative product development projects.</p>
+					<p class="text-justify my-2">Highest award in product renewal project. Contact me for grades.</p>
+					<p>As a side activity I worked as supplementary instruction leader in engineering mathematics.</p>
+				</div>
+				<!-- PROJECTS -->
+				<div class="my-5">
+					<h2 class="text-lg tracking-widest uppercase my-5">PROJECTS</h2>
+					<div class="my-5">
+						<div class="flex justify-between mb-1 mt-5">
+							<h2 class="capitalize font-extralight italic">
+								botpilots company webpage</h2>
+							<h2 class="font-extralight">
+								2024</h2>
+						</div>
+						<p class="text-justify my-2">
+							Webpage for BotPilots AB, my own IT consultancy company. Built with TypeScript, React,
+							tailwindcss using Vite as framework. Hosted on AWS Amplify. Uses an email form utilising AWS
+							Gateway API directing to a Lambda function.
+						</p>
+						<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
+							href="http://botpilots.se">Link to
+							site</a>
+					</div>
+					<div class="my-5">
+						<div class="flex justify-between mb-1 mt-5">
+							<h2 class="capitalize font-extralight italic">
+								Provisioner - food planning for adventurers</h2>
+							<h2 class="font-extralight">
+								2024</h2>
+						</div>
+						<p class="text-justify my-2">Provisioner was my first big project in Java EE. It's a web
+							application which calculates the provisions needed for any group of people planning an
+							adventure together.
+							The calculation respects many things, for example the physiology of each crew member,
+							nutrient energy
+							density and nutrient, ingredient and meal proportions.
+						</p>
+						<p class="text-justify my-2">
+							The project used Quarkus as a backend API together with a HTMX driven frontend.
+						</p>
+						<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
+							href="https://github.com/hulsbo/provisioner-quarkus">Link to git repository</a>
+					</div>
+					<div class="my-5">
+						<div class="flex justify-between mb-1 mt-5">
+							<h2 class="capitalize font-extralight italic">
+								Personal running blog</h2>
+							<h2 class="font-extralight">
+								2023-2024</h2>
+
+						</div>
+						<p class="text-justify my-2">The blog was built with static site generator Jekyll and deployed
+							via
+							GitHub
+							Pages. A macro-enabled excel-sheet using Visual Basic scripts was also created to quickly
+							edit and regenerate the html file for the "plan" page.
+							The blog uses JavaScript to make it easier for visitors to follow the progress of the
+							running plan.
+						</p>
+						<div class="flex justify-start my-2 gap-4">
+							<a class="text-justify font-semibold hover:underline text-blue-400"
+								href="https://github.com/hulsbo/personal-blog">Link to git repository</a>
+							<a class="text-justify font-semibold hover:underline text-blue-400"
+								href="https://redshoesrunning.com">Link to site</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
 
 </body>
+
+</html>
