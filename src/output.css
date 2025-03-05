@@ -610,6 +610,18 @@ html {
   margin: 2.5rem;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
+.m-4{
+  margin: 1rem;
+}
+
+.m-3{
+  margin: 0.75rem;
+}
+
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -912,6 +924,10 @@ html {
 }
 
 @media (min-width: 1024px){
+  .lg\:m-10{
+    margin: 2.5rem;
+  }
+
   .lg\:w-60{
     width: 15rem;
   }
