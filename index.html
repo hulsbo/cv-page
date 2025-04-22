@@ -1,340 +1,363 @@
 <!DOCTYPE html>
 <html class="bg-blue-100">
+	<head>
+		<title>Curriculum Vitae - Oskar Huledal</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Let's avoid touching the "Confusing Selector Soup". -->
+		<link href="./src/output.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-	<title>Curriculum Vitae - Oskar Huledal</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Let's avoid touching the "Confusing Selector Soup". -->
-	<link href="./src/output.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Press+Start+2P&display=swap"
-		rel="stylesheet">
-
-</head>
-
-<body class="flex-col justify-items-center lg:m-10 m-3">
-	<!-- page -->
-	<div class=" bg-blue-50 p-5 pt-10 shadow-lg rounded-md max-w-screen-lg">
-
-		<!-- header -->
-		<div class="header flex flex-wrap items-center px-12 pb-10 lg:justify-between justify-evenly gap-10 lg:gap-20">
-			<!-- image and title -->
-			<div class="flex items-center gap-10 lg:gap-12">
-				<div class="image rounded-lg border-8 border-double border-emerald-700 w-36 overflow-hidden">
-					<img src="./src/graphics/meinpolo_softend.png" />
+	<body class="flex-col justify-items-center lg:m-10 m-3">
+		<!-- page -->
+		<div class="bg-blue-50 p-5 pt-10 shadow-lg rounded-md max-w-screen-lg">
+			<!-- header -->
+			<div class="header flex flex-wrap items-center px-12 pb-10 lg:justify-between justify-evenly gap-10 lg:gap-20">
+				<!-- image and title -->
+				<div class="flex items-center gap-10 lg:gap-12">
+					<div class="image rounded-lg border-8 border-double border-emerald-700 w-36 overflow-hidden">
+						<img src="./src/graphics/meinpolo_softend.png" />
+					</div>
+					<!-- title -->
+					<div class="">
+						<!-- name -->
+						<p class="font-extralight text-lg">Oskar Huledal</p>
+						<!-- role -->
+						<p class="capitalize">full stack software developer</p>
+					</div>
 				</div>
-				<!-- title -->
-				<div class="">
-					<!-- name -->
-					<p class="font-extralight text-lg">Oskar Huledal</p>
-					<!-- role -->
-					<p class="capitalize">full stack software developer</p>
+				<!-- contacts -->
+				<div class="flex flex-col flex-nowrap gap-1">
+					<!-- Location -->
+					<div class="flex mb-1">
+						<!-- Icon -->
+						<img class="mr-2 w-[18px]" src="./src/graphics/location.svg" />
+						<!-- Text -->
+						<p class="hover:underline">
+							<a href="https://maps.google.com/?q=57.70887,11.97&ll=51,1.8&z=5" target="_blank">Göteborg, Sweden</a>
+						</p>
+					</div>
+					<!-- GitHub -->
+					<div class="flex mb-1">
+						<!-- Icon -->
+						<img class="mr-2 w-[18px]" src="./src/graphics/github.svg" />
+						<!-- Text -->
+						<p><a class="hover:underline" href="https://github.com/hulsbo" target="_blank">hulsbo</a></p>
+					</div>
+					<!-- LinkedIn -->
+					<div class="flex mb-1">
+						<!-- Icon -->
+						<img class="mr-2 w-[18px]" src="./src/graphics/linkedin.svg" />
+						<!-- Text -->
+						<p>
+							<a class="hover:underline" href="https://www.linkedin.com/in/oskar-huledal/" target="_blank">LinkedIn</a>
+						</p>
+					</div>
 				</div>
 			</div>
-			<!-- contacts -->
-			<div class="flex flex-col flex-nowrap gap-1">
-				<!-- Location -->
-				<div class="flex mb-1">
-					<!-- Icon -->
-					<img class="mr-2 w-[18px]" src="./src/graphics/location.svg" />
-					<!-- Text -->
-					<p class="hover:underline"><a href="https://maps.google.com/?q=57.70887,11.97&ll=51,1.8&z=5"
-							target="_blank">Göteborg, Sweden</a></p>
-				</div>
-				<!-- GitHub -->
-				<div class="flex mb-1">
-					<!-- Icon -->
-					<img class="mr-2 w-[18px]" src="./src/graphics/github.svg" />
-					<!-- Text -->
-					<p><a class="hover:underline" href="https://github.com/hulsbo" target="_blank">hulsbo</a></p>
-				</div>
-				<!-- LinkedIn -->
-				<div class="flex mb-1">
-					<!-- Icon -->
-					<img class="mr-2 w-[18px]" src="./src/graphics/linkedin.svg" />
-					<!-- Text -->
-					<p><a class="hover:underline" href="https://www.linkedin.com/in/oskar-huledal/"
-							target="_blank">LinkedIn</a></p>
-				</div>
-			</div>
-		</div>
-		<!-- Content Columns -->
-		<div class="flex flex-col-reverse gap-3 lg:flex-row lg:gap-0">
-			<!-- First Column -->
-			<div class="bg-emerald-950 rounded-md lg:rounded-r-none px-8 pt-2 pb-8 text-white lg:w-60">
-				<!-- Skills -->
-				<h2 class="text-lg tracking-widest uppercase my-5">COMPETENCES</h2>
-				<div class="flex flex-wrap gap-8">
-					<div class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
-						<h2 class="mb-3 font-bold text-center lg:text-start">FRONTEND</h2>
-						<ul class="*:mb-1">
-							<li>React</li>
-							<li>Typescript</li>
-							<li>HTML5/CSS3/JavaScript</li>
-							<li>HTMX</li>
-							<li>Tailwindcss</li>
-						</ul>
-					</div>
-					<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
-						<h2 class="mb-3 font-bold text-center lg:text-start">BACKEND</h2>
-						<ul class="*:mb-1">
-							<li>Java</li>
-							<li>Quarkus</li>
-							<li>AWS</li>
-						</ul>
-					</div>
-					<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
-						<h2 class="mb-3 font-bold text-center lg:text-start">XML</h2>
-						<ul class="*:mb-1">
-							<li>XSLT</li>
-							<li>XSpec</li>
-							<li>XPath / XQuery</li>
-							<li>DITA</li>
-							<li>RNG</li>
-						</ul>
-					</div>
+			<!-- Content Columns -->
+			<div class="flex flex-col-reverse gap-3 lg:flex-row lg:gap-0">
+				<!-- First Column -->
+				<div class="bg-emerald-950 rounded-md lg:rounded-r-none px-8 pt-2 pb-8 text-white lg:w-60 firstCol">
+					<!-- Skills -->
+					<h2 class="text-lg tracking-widest uppercase my-5">COMPETENCES</h2>
 					<div class="flex flex-wrap gap-8">
-						<div
-							class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
-							<h2 class="mb-3 font-bold text-center lg:text-start">LANGUAGES</h2>
+						<div class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
+							<h2 class="mb-3 font-bold text-center lg:text-start">FRONTEND</h2>
 							<ul class="*:mb-1">
-								<li>Swedish - Native</li>
-								<li>English - Professional</li>
-								<li>French - Moderate fluency</li>
+								<li>React</li>
+								<li>Typescript</li>
+								<li>HTML5/CSS3/JavaScript</li>
+								<li>HTMX</li>
+								<li>Tailwindcss</li>
 							</ul>
 						</div>
+						<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
+							<h2 class="mb-3 font-bold text-center lg:text-start">BACKEND</h2>
+							<ul class="*:mb-1">
+								<li>Java</li>
+								<li>Quarkus</li>
+								<li>AWS</li>
+							</ul>
+						</div>
+						<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
+							<h2 class="mb-3 font-bold text-center lg:text-start">XML</h2>
+							<ul class="*:mb-1">
+								<li>XSLT</li>
+								<li>XSpec</li>
+								<li>XPath / XQuery</li>
+								<li>DITA</li>
+								<li>RNG</li>
+							</ul>
+						</div>
+						<div class="flex flex-wrap gap-8">
+							<div class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
+								<h2 class="mb-3 font-bold text-center lg:text-start">LANGUAGES</h2>
+								<ul class="*:mb-1">
+									<li>Swedish - Native</li>
+									<li>English - Professional</li>
+									<li>French - Moderate fluency</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- Second Column -->
-			<div class="bg-slate-200 flex-1 rounded-md lg:rounded-r-md px-8 py-2">
-				<h2 class="text-lg tracking-widest uppercase my-5">PROFILE</h2>
-				<ul class="mb-5 list-inside flex flex-col gap-1">
-					<li class="flex gap-3"><img src="./src/graphics/check-mark-in-circle.svg"
-							class="self-start mt-1">Full stack developer with professional experience ( 2+
-						years )</li>
-					<li class="flex gap-3"><img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1">
-						Experienced with Java API development ( 1+ years )</li>
-					<li class="flex gap-3"><img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1">
-						XML and XSLT proficiency</li>
-					<li class="flex gap-3"><img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1">
-						Teaching and technical writing experience</li>
-				</ul>
+				<!-- Second Column -->
+				<div class="bg-slate-200 flex-1 rounded-md lg:rounded-r-md px-8 py-2 secondCol">
+					<h2 class="text-lg tracking-widest uppercase my-5">PROFILE</h2>
+					<ul class="mb-5 list-inside flex flex-col gap-1">
+						<li class="flex gap-3">
+							<img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1" />Full stack developer with
+							professional experience ( 2+ years )
+						</li>
+						<li class="flex gap-3">
+							<img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1" /> Experienced with Java API
+							development ( 1+ years )
+						</li>
+						<li class="flex gap-3">
+							<img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1" /> XML and XSLT proficiency
+						</li>
+						<li class="flex gap-3">
+							<img src="./src/graphics/check-mark-in-circle.svg" class="self-start mt-1" /> Teaching and technical
+							writing experience
+						</li>
+					</ul>
 
-				<!-- EXPERIENCE -->
-				<div class="my-5">
-					<h2 class="text-lg tracking-widest uppercase my-5">PROFESSIONAL EXPERIENCE</h2>
-					<div>
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="font-extralight italic">
-								Web Application Consultant @ botPilots</h2>
-							<h2 class="font-extralight">
-								Jan 2025 - ongoing</h2>
+					<!-- EXPERIENCE -->
+					<div class="my-5">
+						<h2 class="text-lg tracking-widest uppercase my-5">PROFESSIONAL EXPERIENCE</h2>
+						<div>
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="font-extralight italic">Web Application Consultant @ BotPilots AB</h2>
+								<h2 class="font-extralight">Jan 2025 - ongoing</h2>
+							</div>
+							<p class="text-justify my-2">
+								Started my own IT consultant company, focusing on front-end and AI consultancy.
+							</p>
+							<!-- <ul class="flex flex-col gap-1 mb-2">
+								<li class="flex gap-3">
+									<img src="./src/graphics/bullet.svg" class="self-start mt-2" />Developed and deployed a PoC API which
+									groups together semantically similar sentences of a publication, removing unncessary translation
+									costs. Ensured API stability with unit and integration testing.
+								</li>
+								<li class="flex gap-3">
+									<img src="./src/graphics/bullet.svg" class="self-start mt-2" />Developed and deployed BotPilots
+									company site with a custom email form.
+								</li>
+								<li class="flex gap-3">
+									<img src="./src/graphics/bullet.svg" class="self-start mt-2" />Developed and deployed web app
+									visualizing training data from Strava by use of their API.
+								</li>
+							</ul> -->
+							<p class="my-2"><b>Tech stack: </b> Java, Quarkus, TypeScript, React, Node.js, p5.js, AWS</p>
 						</div>
-						<p class="text-justify my-2">I am currently working as a self-employed IT consultant, focusing
-							on web application development and XML transformations. While I have been valuing the
-							adventure and independence, I
-							am looking forward to returning to a team environment where I can collaborate with peers and
-							seniors, further advancing my skills as a software and product developer.
+						<div>
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="capitalize font-extralight italic">Software developer @ Simonsoft</h2>
+								<h2 class="font-extralight">Mar 2023 - Dec 2024</h2>
+							</div>
+							<p class="text-justify my-2">
+								Developed <i>"Simonsoft Editor"</i>, a browser-based SaaS XML editor for technical authors, improving
+								UX, speed and integration with Simonsoft CMS compared to legacy products. Feedback and demand was
+								immediately very positive upon launch with both new and old customers adopting it quickly.
+							</p>
+							<p class="text-justify my-2">
+								Developed several XSL transforms, enabling a customer to integrate their PLM with illustration tool Creo
+								Illustrate and generate a spare part topic in Simonsoft CMS.
+							</p>
+							<p class="text-justify my-2">
+								Implemented and conducted a TDD process for XSL development using the XSpec testing framework.
+							</p>
+							<p class="text-justify my-2">
+								Worked independently and project driven in agile sprints, frequently reporting to the senior developer
+								and product owner of the CMS. Tools like ClickUp, Trac and Slack were used for ticketing and project
+								management.
+							</p>
+							<p class="my-2">
+								<b>Tech stack: </b> React, TypeScript, Node.js, xQuery, xPath, XSLT, XML, DITA, JSONML, JavaScript
+								(ES6+), CSS
+							</p>
+						</div>
+						<div>
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="capitalize font-extralight italic">Technical communicator @ SEMCON</h2>
+								<h2 class="font-extralight">Oct 2021 - Mar 2023</h2>
+							</div>
+							<p class="text-justify my-2">
+								Authored service manuals for twelve different warehouse trucks built at Mitsubishi Logisnext in
+								Mölnlycke. Work included frequent communication with different engineers and support specialists.
+								Technical illustrations were ordered from an in-house illustrator. Manual covered all types of
+								electrical and mechanical services and was written as a XML DITA publication.
+							</p>
+							<ul class="flex flex-col gap-1 mb-2">
+								<li class="flex gap-3">
+									<img src="./src/graphics/bullet.svg" class="self-start mt-2" />Authored/co-authored new manuals for
+									platform and stand-in stacker trucks.
+								</li>
+								<li class="flex gap-3">
+									<img src="./src/graphics/bullet.svg" class="self-start mt-2" />Updated the manuals of pedestrian,
+									reach and VNA trucks after a electrical system redesign was made making them complient with EU
+									standard EN 1175:2020.
+								</li>
+								<li class="flex gap-3">
+									<img src="./src/graphics/bullet.svg" class="self-start mt-2" />Refactored DITA profiling for all
+									manuals significantly, simplifying the complexity of filtering logic, facilitating continued use of
+									legacy XML data.
+								</li>
+							</ul>
+							<p>
+								<b>Tech stack: </b> Simonsoft CMS, Arbortext, Creo Illustrate, TortoiseSVN, DITA, Excel, Excel Power
+								Query.
+							</p>
+						</div>
+					</div>
+					<!-- EDUCATION -->
+					<div class="my-5">
+						<h2 class="text-lg tracking-widest uppercase my-5">EDUCATION</h2>
+						<div class="flex justify-between mb-1 mt-5">
+							<h2 class="capitalize font-extralight italic">BSc: Product development and Innovation management</h2>
+							<h2 class="font-extralight">Aug 2016 - June 2019</h2>
+						</div>
+						<p class="text-justify my-2">
+							An innovation engineer learns the fundamentals of engineering in every engineering discipline. The program
+							is intended to equip its students well for the role as a project leader in innovative product development
+							projects as well as entreprenuership and business development.
+						</p>
+						<p class="text-justify my-2">
+							During my studies I developed a strong interest in computational mathematics. I therefore decided to
+							broaden my studies with computational mathematics and mechanical engineering, following the curriculum of
+							mechanical engineering students. This required me to do concurrent studies at double full-time pace during
+							one year. During the same year I also learnt french for two months as a summer activity reaching B1 level
+							- a great year!
+						</p>
 						<p>
-							Now I'm eager to bring my skills back to a collaborative team setting where I can contribute
-							to exciting projects and continue to grow as a developer.
+							As a side activity I worked as a supplementary instruction leader in engineering mathematics. This
+							included creating my own type of sessions I called
+							<i>"SIMM" - "Supplementary Instruction in Mathematical Modelling"</i>, where I taught students how to
+							model and solve problems in Mathematica. It was thrilling, and the sessions were very popular lasting for
+							two semesters.
 						</p>
-						</p>
+						<p class="text-justify my-2">Highest award in product renewal project. Contact me for grades.</p>
 					</div>
-					<div>
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="capitalize font-extralight italic">
-								Software developer @ Simonsoft</h2>
-							<h2 class="font-extralight">
-								Mar 2023 - Dec 2024</h2>
-						</div>
-						<p class="text-justify">Developed <i>"Simonsoft Editor"</i>, a SaaS XML editor for technical
-							writers
-							based on the Fonto
-							platform. The editor is run in browser and based on a plethora of node.js libraries such as
-							React, express.js, Webpack and TypeScript.
-						</p>
-						<p class="text-justify my-2">In addition to this responsibility, I have been maintaining the RNG
-							DITA schemas and developing XSL transforms for the CMS's different XML pipelines. I also
-							implemented a strict "TDD" process for XSLT development using the XSpec testing framework.
-						</p>
-						<p class="text-justify my-2">
-							I worked independently and project driven in sprints, frequently reporting to the senior
-							developer and product owner of the CMS. Tools like
-							ClickUp, Trac and Slack were used for ticketing and project management.
-						</p>
-					</div>
-					<div>
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="capitalize font-extralight italic">Technical communicator @ SEMCON
-							</h2>
-							<h2 class="font-extralight">Oct 2021 - Mar 2023</h2>
-						</div>
-						<p class="text-justify">
-							Responible for service manuals for the whole warehouse truck portfolio built
-							at Mitsubishi Logisnext in Mölnlycke. Work included frequent communication with
-							stakeholders of the manual. Manual was written in XML and DITA.
-						</p>
-						<p class="text-justify my-2">
-							Alongside this responsibility I coached a junior technical writer to become familiar with
-							tools and workflows.
-						</p>
-					</div>
-				</div>
-				<!-- EDUCATION -->
-				<div class=" my-5">
-					<h2 class="text-lg tracking-widest uppercase my-5">EDUCATION</h2>
-					<div class="flex justify-between mb-1 mt-5">
-						<h2 class="capitalize font-extralight italic">
-							BSc: Product development and Innovation management</h2>
-						<h2 class="font-extralight">
-							Aug 2016 - June 2019</h2>
-					</div>
-					<p class="text-justify my-2">An innovation engineer learns the fundamentals of engineering in
-						every
-						engineering discipline. The program is intended to equip its students well for the role as a
-						project leader in innovative product development projects as well as entreprenuership and
-						business development.</p>
-					<p class="text-justify my-2">
-						During my studies I developed a strong interest in computational mathematics. I therefore
-						decided to broaden my studies with computational mathematics and mechanical engineering,
-						following the curriculum of mechanical engineering students. This required me to do concurrent
-						studies at double full-time pace during one year. During the same year I
-						also learnt french for two months as a summer activity reaching B1 level - a great year!
-					</p>
-					<p>As a side activity I worked as a supplementary instruction leader in engineering mathematics.
-						This
-						included creating my own type of sessions I called
-						<i>"SIMM" - "Supplementary Instruction in Mathematical Modelling"</i>, where I taught students
-						how to
-						model and solve problems in Mathematica. It was thrilling, and the sessions were very popular
-						lasting for two semesters.
-					</p>
-					<p class="text-justify my-2">Highest award in product renewal project. Contact me for grades.
-					</p>
-				</div>
-				<!-- PROJECTS -->
-				<div class="my-5">
-					<h2 class="text-lg tracking-widest uppercase my-5">PROJECTS</h2>
+					<!-- PROJECTS -->
 					<div class="my-5">
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="capitalize font-extralight italic">
-								RunGraph</h2>
-							<h2 class="font-extralight">
-								2025</h2>
+						<h2 class="text-lg tracking-widest uppercase my-5">PROJECTS</h2>
+						<div class="my-5">
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="capitalize font-extralight italic">RunGraph</h2>
+								<h2 class="font-extralight">2025</h2>
+							</div>
+							<p class="text-justify my-2">
+								A visualization tool for running activities, built with Vite, TypeScript, and p5.js. Integrates with the
+								Strava API.
+							</p>
+							<div class="flex justify-start my-2 gap-4">
+								<a
+									class="text-justify font-semibold hover:underline text-blue-400 my-2"
+									href="https://github.com/botpilots/rungraph"
+									>Link to repository</a
+								>
+								<a
+									class="text-justify font-semibold hover:underline text-blue-400 my-2"
+									href="https://botpilots.github.io/rungraph/"
+									>Link to site</a
+								>
+							</div>
 						</div>
-						<p class="text-justify my-2">
-							A visualization tool for running activities, built with Vite, TypeScript, and p5.js.
-							Integrates with the Strava API.
-						</p>
-						<div class="flex justify-start my-2 gap-4">
-							<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
-								href="https://github.com/botpilots/rungraph">Link to
-								repository</a>
-							<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
-								href="https://botpilots.github.io/rungraph/">Link to site</a>
+						<div class="my-5">
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="capitalize font-extralight italic">Semantic Similarity API</h2>
+								<h2 class="font-extralight">2025</h2>
+							</div>
+							<p class="text-justify my-2">
+								An API comparing the semantic similarity of sentences of an XML document. Creates the vectors using the
+								all-MiniLM-L6-v2-onnx model from Hugging Face, then compares them using threshold-based cosine
+								clustering. Built with Java, Quarkus. Hosted on a fargate container on AWS.
+							</p>
+							<div class="flex justify-start my-2 gap-4">
+								<a
+									class="text-justify font-semibold hover:underline text-blue-400 my-2"
+									href="https://github.com/botpilots/Semantic-Similarity-API-Public"
+									>Link to repository</a
+								>
+								<a
+									class="text-justify font-semibold hover:underline text-blue-400 my-2"
+									href="http://3.250.182.204:8080/demo/index.html"
+									>Link to site</a
+								>
+							</div>
 						</div>
-					</div>
-					<div class="my-5">
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="capitalize font-extralight italic">
-								Semantic Similarity API</h2>
-							<h2 class="font-extralight">
-								2025</h2>
+						<div class="my-5">
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="capitalize font-extralight italic">botpilots company site</h2>
+								<h2 class="font-extralight">2025</h2>
+							</div>
+							<p class="text-justify my-2">
+								The company site for my own IT consultancy company. Built with TypeScript, React, tailwindcss using Vite
+								as framework. Initially built and hosted on AWS Amplify, then via GitHub Workflows and GitHub
+								Pages.=Workflows for a CI/CD development process. Uses an email form utilising AWS Gateway API directing
+								to a Lambda function.
+							</p>
+							<div class="flex justify-start my-2 gap-4">
+								<a
+									class="text-justify font-semibold hover:underline text-blue-400 my-2"
+									href="https://github.com/botpilots/botpilots-site"
+									>Link to repository</a
+								>
+								<a class="text-justify font-semibold hover:underline text-blue-400 my-2" href="http://botpilots.se"
+									>Link to site</a
+								>
+							</div>
 						</div>
-						<p class="text-justify my-2">
-							An API comparing the semantic similarity of sentences of an XML document. Creates the
-							vectors using the
-							all-MiniLM-L6-v2-onnx model from Hugging Face, then compares them using threshold-based
-							cosine clustering.
-							Built with Java, Quarkus. Hosted on a fargate container on AWS.
-						</p>
-						<div class="flex justify-start my-2 gap-4">
-							<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
-								href="https://github.com/botpilots/Semantic-Similarity-API-Public">Link to
-								repository</a>
-							<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
-								href="http://3.250.182.204:8080/demo/index.html">Link to site</a>
+						<div class="my-5">
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="capitalize font-extralight italic">Provisioner - food planning for adventurers</h2>
+								<h2 class="font-extralight">2024</h2>
+							</div>
+							<p class="text-justify my-2">
+								A web application for calculating optimal food provisions for group adventures based on physiological
+								needs and nutritional requirements.
+							</p>
+							<p class="text-justify my-2">
+								Uses Quarkus as the backend framework together with a HTMX driven frontend.
+							</p>
+							<a
+								class="text-justify font-semibold hover:underline text-blue-400 my-2"
+								href="https://github.com/hulsbo/provisioner-quarkus"
+								>Link to git repository</a
+							>
 						</div>
-
-					</div>
-					<div class="my-5">
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="capitalize font-extralight italic">
-								botpilots company site</h2>
-							<h2 class="font-extralight">
-								2025</h2>
-						</div>
-						<p class="text-justify my-2">
-							The company site for my own IT consultancy company. Built with TypeScript, React,
-							tailwindcss using Vite as framework. Initially hosted on AWS Amplify, then GitHub Pages
-							with their Workflows for a CI/CD development process.
-							Uses an email form utilising AWS Gateway API directing to a Lambda function.
-						</p>
-						<div class="flex justify-start my-2 gap-4">
-							<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
-								href="https://github.com/botpilots/botpilots-site">Link to
-								repository</a>
-							<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
-								href="http://botpilots.se">Link to
-								site</a>
-						</div>
-					</div>
-					<div class="my-5">
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="capitalize font-extralight italic">
-								Provisioner - food planning for adventurers</h2>
-							<h2 class="font-extralight">
-								2024</h2>
-						</div>
-						<p class="text-justify my-2">A web application for calculating optimal food provisions for
-							group
-							adventures based on physiological needs and nutritional requirements.</p>
-						<p class="text-justify my-2">
-							Uses Quarkus as the backend framework together with a HTMX driven frontend.
-						</p>
-						<a class="text-justify font-semibold hover:underline text-blue-400 my-2"
-							href="https://github.com/hulsbo/provisioner-quarkus">Link to git repository</a>
-					</div>
-					<div class="my-5">
-						<div class="flex justify-between mb-1 mt-5">
-							<h2 class="capitalize font-extralight italic">
-								Personal running blog</h2>
-							<h2 class="font-extralight">
-								2023-2024</h2>
-
-						</div>
-						<p class="text-justify my-2">The blog was built with static site generator Jekyll and
-							deployed
-							via
-							GitHub
-							Pages. A macro-enabled excel-sheet using Visual Basic scripts was also created to
-							quickly
-							edit and regenerate the html file for the "plan" page.
-							The blog uses JavaScript to make it easier for visitors to follow the progress of the
-							running plan.
-						</p>
-						<div class="flex justify-start my-2 gap-4">
-							<a class="text-justify font-semibold hover:underline text-blue-400"
-								href="https://github.com/hulsbo/personal-blog">Link to git repository</a>
-							<a class="text-justify font-semibold hover:underline text-blue-400"
-								href="https://redshoesrunning.com">Link to site</a>
+						<div class="my-5">
+							<div class="flex justify-between mb-1 mt-5">
+								<h2 class="capitalize font-extralight italic">Personal running blog</h2>
+								<h2 class="font-extralight">2023-2024</h2>
+							</div>
+							<p class="text-justify my-2">
+								The blog was built with static site generator Jekyll and deployed via GitHub Pages. A macro-enabled
+								excel-sheet using Visual Basic scripts was also created to quickly edit and regenerate the html file for
+								the "plan" page. The blog uses JavaScript to make it easier for visitors to follow the progress of the
+								running plan.
+							</p>
+							<div class="flex justify-start my-2 gap-4">
+								<a
+									class="text-justify font-semibold hover:underline text-blue-400"
+									href="https://github.com/hulsbo/personal-blog"
+									>Link to git repository</a
+								>
+								<a class="text-justify font-semibold hover:underline text-blue-400" href="https://redshoesrunning.com"
+									>Link to site</a
+								>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-	</div>
-
-
-
-
-
-</body>
-
+	</body>
 </html>
