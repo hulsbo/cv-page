@@ -566,6 +566,12 @@ html {
   font-family: "Ubuntu", serif;
 }
 
+.secondCol h4 {
+  font-family: "Computer Modern Serif", serif;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
 .container{
   width: 100%;
 }
@@ -659,12 +665,12 @@ html {
   margin-top: 0.25rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .flex{
@@ -759,20 +765,8 @@ html {
   gap: 2rem;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
-.place-self-center{
-  place-self: center;
-}
-
 .self-start{
   align-self: flex-start;
-}
-
-.self-center{
-  align-self: center;
 }
 
 .overflow-hidden{
@@ -880,10 +874,6 @@ html {
   text-align: justify;
 }
 
-.align-middle{
-  vertical-align: middle;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -956,6 +946,10 @@ html {
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
   }
 
   .lg\:justify-between{

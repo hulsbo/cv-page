@@ -11,6 +11,9 @@
 	html {
 	  font-family: "Ubuntu", serif;
 	}
-
-
+	.secondCol h4 {
+	  font-family: "Computer Modern Serif", serif;
+	  font-style: italic;
+	  font-size: 1.1rem;
+	}
   }
