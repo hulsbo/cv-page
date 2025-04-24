@@ -4,7 +4,7 @@
 		<title>Curriculum Vitae - Oskar Huledal</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/x-icon" href="/bp_icon.ico">
+		<link rel="icon" type="image/x-icon" href="/bp_icon.ico" />
 		<!-- Let's avoid touching the "Confusing Selector Soup". -->
 		<link href="./src/output.css" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,12 +21,12 @@
 			<!-- header -->
 			<div class="header flex flex-wrap items-center px-12 pb-10 lg:justify-between justify-evenly gap-10 lg:gap-20">
 				<!-- image and title -->
-				<div class="flex items-center gap-10 lg:gap-12">
+				<div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-12">
 					<div class="image rounded-lg border-8 border-double border-emerald-700 w-36 overflow-hidden">
 						<img src="./src/graphics/meinpolo_softend.png" />
 					</div>
 					<!-- title -->
-					<div class="">
+					<div class="flex flex-col lg:items-start items-center gap-1 lg:gap-0">
 						<!-- name -->
 						<p class="font-extralight text-lg">Oskar Huledal</p>
 						<!-- role -->
@@ -71,7 +71,7 @@
 					<div class="flex flex-wrap gap-8">
 						<div class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
 							<h2 class="mb-3 font-bold text-center lg:text-start">FRONTEND</h2>
-							<ul class="*:mb-1">
+							<ul class="flex flex-col gap-1 items-center">
 								<li>React</li>
 								<li>Typescript</li>
 								<li>HTML5/CSS3/JavaScript</li>
@@ -81,7 +81,7 @@
 						</div>
 						<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
 							<h2 class="mb-3 font-bold text-center lg:text-start">BACKEND</h2>
-							<ul class="*:mb-1">
+							<ul class="flex flex-col gap-1 items-center">
 								<li>Java</li>
 								<li>Quarkus</li>
 								<li>AWS</li>
@@ -89,7 +89,7 @@
 						</div>
 						<div class="border-gray-500 border-2 border-dashed rounded-lg lg:p-0 p-2 flex-auto lg:border-none">
 							<h2 class="mb-3 font-bold text-center lg:text-start">XML</h2>
-							<ul class="*:mb-1">
+							<ul class="flex flex-col gap-1 items-center">
 								<li>XSLT</li>
 								<li>XSpec</li>
 								<li>XPath / XQuery</li>
@@ -97,15 +97,13 @@
 								<li>RNG</li>
 							</ul>
 						</div>
-						<div class="flex flex-wrap gap-8">
-							<div class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
-								<h2 class="mb-3 font-bold text-center lg:text-start">LANGUAGES</h2>
-								<ul class="*:mb-1">
-									<li>Swedish - Native</li>
-									<li>English - Professional</li>
-									<li>French - Moderate fluency</li>
-								</ul>
-							</div>
+						<div class="border-gray-500 border-2 border-dashed rounded-lg p-2 lg:p-0 flex-auto lg:border-none">
+							<h2 class="mb-3 font-bold text-center lg:text-start">LANGUAGES</h2>
+							<ul class="flex flex-col gap-1 items-center">
+								<li>Swedish - Native</li>
+								<li>English - Professional</li>
+								<li>French - Moderate fluency</li>
+							</ul>
 						</div>
 					</div>
 				</div>
